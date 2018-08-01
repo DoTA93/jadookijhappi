@@ -46,7 +46,7 @@ img{
     align-self: center;
 }
 #home h1,
-#how-it-works h1, #why-it-works h1 {
+#how-it-works h1, #why-it-works h1, #about h1, #faq h1, #contact h1 {
     font-weight: 900;
     font-size: 3rem;
 }
@@ -63,4 +63,31 @@ img{
     font-size:24px;
     text-transform: uppercase;
     padding: 0.8rem 2.5rem;
+}
+
+.form-control{
+    border-color:black;
+    border-width:2px;
+}
+
+.btn-submit{
+    background-color: black;
+    padding: 0.5rem 2rem;
+    color:white;
+}
+
+.card{
+     border-color:black;
+    border-width:2px;
+}
+
+.card-right-img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.light-text {
+    color: rgba(255, 255, 255, 0.3);
 }
