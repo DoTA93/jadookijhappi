@@ -91,3 +91,8 @@ img{
 .light-text {
     color: rgba(255, 255, 255, 0.3);
 }
+
+.scroll{
+    display: block;
+    margin-top: -25px;
+}
