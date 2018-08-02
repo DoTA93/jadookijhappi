@@ -11,37 +11,44 @@ img{
 .logo{
         height: 280px;
 }
+@media (max-width: 991px) {
+    .logo {
+        height: 100px;
+    }
+}
+@media (min-width: 992px) {
+    #topNavLinks .nav-link{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border: 2px solid #000;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: black;
+    }
 
-#topNavLinks .nav-link{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border: 2px solid #000;
-    border-top-width: 4px;
-    border-bottom-width: 4px;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: black;
+    #topNavLinks .nav-item:first-child .nav-link {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-left-width: 4px;
+    }
+    #topNavLinks .nav-item:last-child .nav-link {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-right-width: 4px;
+    }
+    #topNavLinks .nav-item.active .nav-link,
+    #topNavLinks .nav-item:hover .nav-link {
+        background-color: #000000;
+        color:#ffffff;
+    }
 }
 
-#topNavLinks .nav-item:first-child .nav-link {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-left-width: 4px;
-}
-#topNavLinks .nav-item:last-child .nav-link {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-right-width: 4px;
-}
-#topNavLinks .nav-item.active .nav-link,
-#topNavLinks .nav-item:hover .nav-link {
-    background-color: #000000;
-    color:#ffffff;
-}
 
 /* home section */
 #home {
-    height: 600px;
+    min-height: 600px;
     display: flex;
     align-self: center;
 }
